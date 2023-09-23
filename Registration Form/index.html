@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <div class="container">
+    <h1>GlobalTech Registration Form</h1>
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="name" class="required">Name:</label>
+      </div>
+      <div class="col-30">
+        <input type="text" id="fname" name="firstname" placeholder="First name" required>
+      </div>
+      <div class="col-30">
+        <input type="text" id="lname" name="lastname" placeholder="Last name" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="College" class="required">College Name:</label>
+      </div>
+      <div class="col-75">
+         <input type="text"  name="college name" placeholder="college name" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+      <label for="gender" class="required">Gender:</label>
+      </div>
+      <div class="col-75">
+      <label for="male">Male</label>
+      <input type="radio" name="Gender" value="Male" required/>
+      
+      <label for="female">Female</label>
+      <input type="radio" name="Gender" value="Female"/>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="Email" class="required">Email:</label>
+      </div>
+      <div class="col-75">
+         <input type="text"  name="email" placeholder="Email ID" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Phone" class="required">Phone No:</label>
+      </div>
+      <div class="col-75">
+         <input type="text"  name="phone" placeholder="Phone No" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Course" class="required">Domain:</label>
+      </div>
+      <div class="col-75">
+         <select id="domain" name="domain" required>
+           <option value="">--select domain--</option>
+          <option value="Web">Web Development</option>
+          <option value="Java">Java Development</option>
+          <option value="Cloud">Cloud Computing</option>
+          <option value="Python">Python Development</option>
+          <option value="DataScience">Data Science</option>
+        </select>
+      </div>
+    </div>
+      
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit" align="center">
+    </div>
+  </form>
+</div>
+      <script src="script.js"></script>
+  </body>
+</html>
